@@ -1,0 +1,39 @@
+
+
+.navbar__contact {
+  padding: 10px;
+  display: flex;
+  @media screen and (max-width: 1200px) {
+    
+    flex-direction: column;
+   gap:10px
+  }
+   @media screen and (max-width: 768px) {
+   display:  none;
+  }
+
+}
+.navbar__button {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--grey-heading);
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+
+   &:focus,
+  &:hover {
+    color: var(--blue);
+  }
+  &:hover,
+  &:focus {
+    --color1: var(--blue);
+    --color2: var(--blue);
+    cursor: pointer;
+  }
+}
